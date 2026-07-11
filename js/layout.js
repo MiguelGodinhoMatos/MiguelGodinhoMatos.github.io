@@ -23,7 +23,6 @@
     '      <li><a href="teaching.html" data-nav="teaching">Teaching</a></li>' +
     '      <li><a href="service.html" data-nav="service">Service</a></li>' +
     '      <li><a href="grants.html" data-nav="grants">Grants &amp; Awards</a></li>' +
-    '      <li><a href="hiring.html" data-nav="hiring">Hiring</a></li>' +
     '      <li><a href="#contact" data-nav="contact">Contact</a></li>' +
     '    </ul>' +
     '    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" aria-pressed="false">' +

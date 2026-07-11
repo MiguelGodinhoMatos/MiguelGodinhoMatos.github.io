@@ -17,7 +17,6 @@ research.html      # publications
 teaching.html      # courses
 service.html       # editorial / conference / review / institutional
 grants.html        # grants & awards
-hiring.html        # postdoc positions
 css/style.css      # design system + light/dark themes
 js/layout.js       # SHARED nav + footer (single source of truth) + theme toggle,
                    #   mobile nav, publication links
