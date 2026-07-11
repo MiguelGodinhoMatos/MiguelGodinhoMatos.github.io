@@ -47,6 +47,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  padding-top: 62px; /* reserve fixed-header height so injected nav causes no jump */
   font-family: var(--sans);
   font-size: 1.02rem;
   line-height: 1.65;
@@ -56,6 +57,8 @@ body {
   text-rendering: optimizeLegibility;
   transition: background-color .3s ease, color .3s ease;
 }
+
+[id] { scroll-margin-top: 78px; } /* keep anchored targets clear of the fixed header */
 
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(1.1rem, 5vw, 2rem); }
 
@@ -74,8 +77,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; col
 
 /* ---------- Header / nav ---------- */
 .site-header {
-  position: sticky; top: 0; z-index: 100;
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -145,6 +148,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; col
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.1rem, 5vw, 2rem); border-top: 1px solid var(--border); }
+main > .section:first-child { border-top: 0; } /* dedicated pages: no rule under the header */
 .section__title { font-size: clamp(1.6rem, 4vw, 2.1rem); margin: 0 0 1.6rem; }
 .section__title::after { content: ""; display: block; width: 46px; height: 3px; background: var(--accent); margin-top: .6rem; border-radius: 2px; }
 .section__head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
@@ -156,6 +160,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; col
   text-transform: uppercase; color: var(--text-mute); margin: 2.4rem 0 1rem;
 }
 .subhead:first-of-type { margin-top: 1.4rem; }
+
+.section__more { margin: 2rem 0 0; }
+.section__more a { font-weight: 600; }
 
 .prose p { color: var(--text-soft); margin: 0 0 1rem; }
 .prose strong, .feature-list strong { color: var(--text); }
