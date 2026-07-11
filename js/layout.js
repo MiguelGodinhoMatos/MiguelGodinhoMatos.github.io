@@ -117,24 +117,5 @@
       var y = new Date().getFullYear();
       if (y && !isNaN(y)) yearEl.textContent = String(y);
     }
-
-    /* ---------- Publication titles -> Google Scholar search ----------
-       Progressive enhancement: titles are plain text in the HTML (good for
-       SEO / no-JS); turn each into a Scholar search for the exact title.
-       No fabricated DOIs — an honest lookup that always resolves. */
-    var titles = document.querySelectorAll(".pub-title");
-    Array.prototype.forEach.call(titles, function (el) {
-      if (el.tagName === "A") return;
-      var text = (el.textContent || "").trim();
-      if (!text) return;
-      var a = document.createElement("a");
-      a.className = "pub-title";
-      a.href = "https://scholar.google.com/scholar?q=" + encodeURIComponent(text);
-      a.target = "_blank";
-      a.rel = "noopener";
-      a.title = "Find on Google Scholar";
-      a.textContent = text;
-      el.parentNode.replaceChild(a, el);
-    });
   });
 })();

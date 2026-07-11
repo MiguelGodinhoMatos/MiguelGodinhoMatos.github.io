@@ -179,6 +179,7 @@ main > .section:first-child { border-top: 0; } /* dedicated pages: no rule under
 .timeline__body { color: var(--text-soft); }
 
 /* Publications */
+.research-note { font-size: .9rem; color: var(--text-mute); margin: -0.2rem 0 1.6rem; }
 .pubs { list-style: none; counter-reset: pub; margin: 0; padding: 0; }
 .pubs li {
   counter-increment: pub; position: relative;
