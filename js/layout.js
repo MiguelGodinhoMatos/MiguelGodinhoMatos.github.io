@@ -51,7 +51,7 @@
     '    <div class="footer__col">' +
     '      <h3 class="footer__label">Elsewhere</h3>' +
     '      <p><a href="https://scholar.google.pt/citations?user=0jWWRpgAAAAJ&amp;hl=pt-PT" target="_blank" rel="noopener">Google Scholar</a></p>' +
-    '      <p><a href="https://drive.google.com/file/d/1dLpzw0h15aId9u1KiWmliMG-unQ2tG5-/view?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a></p>' +
+    '      <p><a href="https://drive.google.com/file/d/1CsJeGCi3Ua5nHJXQVxWOJCRe9eCH2WJW/view?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a></p>' +
     '    </div>' +
     '  </div>' +
     '  <div class="container footer__base">' +
