@@ -42,7 +42,7 @@
     '    <div class="footer__col">' +
     '      <h3 class="footer__label">Católica Lisbon (CLSBE)</h3>' +
     '      <p><a href="mailto:miguel.godinhomatos@ucp.pt">miguel.godinhomatos@ucp.pt</a></p>' +
-    '      <p class="footer__addr">Caminho Palma de Cima<br />1600-178 Lisboa, Portugal</p>' +
+    '      <p class="footer__addr">Caminho Palma de Cima<br />1649-023 Lisboa, Portugal</p>' +
     '    </div>' +
     '    <div class="footer__col">' +
     '      <h3 class="footer__label">Carnegie Mellon (CMU)</h3>' +
