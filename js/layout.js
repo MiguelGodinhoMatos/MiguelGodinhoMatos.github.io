@@ -41,7 +41,7 @@
     '    </div>' +
     '    <div class="footer__col">' +
     '      <h3 class="footer__label">Católica Lisbon (CLSBE)</h3>' +
-    '      <p><a href="mailto:miguel.godinhomatos@ucp.pt">miguel.godinhomatos@ucp.pt</a></p>' +
+    '      <p><a class="js-email" data-show-email href="#">Email</a></p>' +
     '      <p class="footer__addr">Caminho Palma de Cima<br />1649-023 Lisboa, Portugal</p>' +
     '    </div>' +
     '    <div class="footer__col">' +
@@ -122,5 +122,14 @@
       var y = new Date().getFullYear();
       if (y && !isNaN(y)) yearEl.textContent = String(y);
     }
+
+    /* ---------- Email (assembled at runtime to deter scrapers) ----------
+       The address is never stored as one contiguous string in the source. */
+    var eUser = "miguel.godinhomatos", eDomain = ["ucp", "pt"].join(".");
+    var addr = eUser + String.fromCharCode(64) + eDomain;
+    Array.prototype.forEach.call(document.querySelectorAll(".js-email"), function (a) {
+      a.setAttribute("href", "mailto:" + addr);
+      if (a.hasAttribute("data-show-email")) a.textContent = addr;
+    });
   });
 })();
