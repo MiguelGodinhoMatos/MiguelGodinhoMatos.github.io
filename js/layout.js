@@ -41,7 +41,7 @@
     '    </div>' +
     '    <div class="footer__col">' +
     '      <h3 class="footer__label">Católica Lisbon (CLSBE)</h3>' +
-    '      <p><a class="js-email" data-show-email href="#">Email</a></p>' +
+    '      <p><a class="js-email" href="#">Email me →</a></p>' +
     '      <p class="footer__addr">Caminho Palma de Cima<br />1649-023 Lisboa, Portugal</p>' +
     '    </div>' +
     '    <div class="footer__col">' +
